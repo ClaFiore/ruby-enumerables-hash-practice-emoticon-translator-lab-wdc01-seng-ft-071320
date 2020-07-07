@@ -22,8 +22,8 @@ def get_japanese_emoticon(file_path, eng_emoticon)
         puts "Sorry, that emoticon was not found"
       end
   end
-
 end
+
 
 def get_english_meaning(file_path, jap_emoticon)
   library = load_library(file_path)
@@ -35,5 +35,4 @@ def get_english_meaning(file_path, jap_emoticon)
             puts "Sorry, that emoticon was not found"
           end
       end
-
 end
