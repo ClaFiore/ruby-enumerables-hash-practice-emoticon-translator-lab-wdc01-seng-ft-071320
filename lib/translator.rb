@@ -18,8 +18,8 @@ end
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
 
-  if load_library(file_path)[mood][:japanese] == emoticon
-    return load_library(file_path)[mood][:english]
+  if library[:japanese].find {|jap_emoji| jap_emoji == emoticon}
+    return library[:english]
   else
     puts "Sorry, that emoticon was not found"
   end
