@@ -12,8 +12,8 @@ end
 
 def get_japanese_emoticon(file_path, english_emoji)
   library = load_library(file_path)
-  library.each
-  # code goes here
+  library.find do |x| x == english_emoji end
+  binding.pry
 end
 
 def get_english_meaning
