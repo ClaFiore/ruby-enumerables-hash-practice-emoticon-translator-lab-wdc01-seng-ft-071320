@@ -12,7 +12,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   library = load_library(file_path)
-  translator["mood"][:english].find do |x| x == english_emoji end
+  library.find do |x| x == english_emoji end
   binding.pry
 end
 
