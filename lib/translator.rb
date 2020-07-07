@@ -15,7 +15,7 @@ end
 def get_japanese_emoticon(file_path, eng_emoticon)
   library = load_library(file_path)
 
-  library.each do |key|
+  library.each do |key, values|
       if key[:english] = eng_emoticon
 
          return key[:japanese]
