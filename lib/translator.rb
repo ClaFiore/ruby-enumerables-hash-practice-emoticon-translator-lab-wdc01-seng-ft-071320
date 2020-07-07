@@ -11,8 +11,8 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, english_emoji)
-  library = load_library(file_path)
-  library.find do |x| x == english_emoji end
+  translator = load_library(file_path)
+  translator["mood"][:english].find do |x| x == english_emoji end
   binding.pry
 end
 
