@@ -6,7 +6,11 @@ def load_library(file_path)
  translator = {}
 
  emoticons.each do |mood, value_array|
- translator["mood"] = {:english => "value_array[0]", :japanese => "value_array[1]"}
+   mood.each do |inner_key, inner_value|
+     binding.pry
+
+end
+ #translator["mood"] = {:english => "value_array[0]", :japanese => "value_array[1]"}
 #binding.pry
  end
 end
