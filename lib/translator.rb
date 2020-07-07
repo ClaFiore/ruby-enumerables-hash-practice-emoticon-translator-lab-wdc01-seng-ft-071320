@@ -17,7 +17,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   library = load_library(file_path)
-
+binding.pry
   if library[:japanese].find {|jap_emoji| jap_emoji == emoticon}
     return library[:english]
   else
