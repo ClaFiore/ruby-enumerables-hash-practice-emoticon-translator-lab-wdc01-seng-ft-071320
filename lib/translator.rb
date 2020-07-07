@@ -10,12 +10,14 @@ def load_library(file_path)
  translator
 end
 
+
+
 def get_japanese_emoticon(file_path, eng_emoticon)
   library = load_library(file_path)
 
-  library.each do |key, values|
+  library.each do |key|
       if key[:english] = eng_emoticon
-  binding.pry
+
          return key[:japanese]
 
       else
