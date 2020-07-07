@@ -12,9 +12,9 @@ def load_library(file_path)
 #binding.pry
 end
 
-def get_japanese_emoticon(file_path, emoji)
+def get_japanese_emoticon(file_path, english_emoji)
   library = load_library(file_path)
-
+  library.each 
   # code goes here
 end
 
