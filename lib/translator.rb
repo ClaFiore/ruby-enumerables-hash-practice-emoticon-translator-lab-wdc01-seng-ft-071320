@@ -15,8 +15,9 @@ def get_japanese_emoticon(file_path, eng_emoticon)
 
   library.each do |key, values|
       if key[:english] = eng_emoticon
+        binding.pry
          return key[:japanese]
-         binding.pry
+         
       else
         puts "Sorry, that emoticon was not found"
       end
