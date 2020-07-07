@@ -3,10 +3,10 @@
 
 def load_library(file_path)
  emoticons = YAML.load_file(file_path)
- translator = {}
+ translator = {"emoji" => {:english => "", :japanese => ""}}
 
  emoticons.each do |mood, value_array|
- emoticons["mood"] = {:english => "value_array[0]", :japanese => "value_array[1]"}
+ translator["emoji"] = {:english => "value_array[0]", :japanese => "value_array[1]"}
 binding.pry
  end
 end
